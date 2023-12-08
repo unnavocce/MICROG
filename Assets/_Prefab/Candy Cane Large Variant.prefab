@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &301562810325952517
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.722488
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.8504257
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086127322932802189, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490851865929811254, guid: 7e7aa4917e2a68949b5d19130e253209,
+        type: 3}
+      propertyPath: m_Name
+      value: Candy Cane Large Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7e7aa4917e2a68949b5d19130e253209, type: 3}
+--- !u!1 &8213102331144170803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8490851865929811254, guid: 7e7aa4917e2a68949b5d19130e253209,
+    type: 3}
+  m_PrefabInstance: {fileID: 301562810325952517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7946400022113962601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8213102331144170803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c25489e2bf08d2840a3d56e9595437e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacleSpeed: 30
