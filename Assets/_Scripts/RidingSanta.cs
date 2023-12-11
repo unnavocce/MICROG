@@ -1,12 +1,14 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Unity.LEGO.Minifig
 {
-    public class RidingMinifigController : MinifigController
+    public class RidingSanta : MinifigController
     {
         // Constants.
         const float slowDownDuration = 1.0f;
+        const float alwaysRunSpeed = 12.0f;
 
         public new enum SpecialAnimation
         {
@@ -69,7 +71,19 @@ namespace Unity.LEGO.Minifig
             // Make sure the Character Controller is grounded if starting on the ground.
             if (controller.enabled)
             {
-                controller.Move(Vector3.down * 0.01f);
+                controller.Move(Vector3.down * 0.01f); 
+            }
+        }
+
+        public string sceneToLoad; // The name of the scene to load
+
+        private void OnTriggerEnter(Collider other)
+        {
+            // Check if the object that entered the trigger has a specific tag (optional)
+            if (other.CompareTag("Obstacle"))
+            {
+                // Load the specified scene
+                SceneManager.LoadScene(sceneToLoad);
             }
         }
 
@@ -80,103 +94,9 @@ namespace Unity.LEGO.Minifig
             {
                 if (inputEnabled)
                 {
-                    switch (inputType)
-                    {
-                        case InputType.Tank:
-                            {
-                                // Calculate speed.
-                                var targetSpeed = Input.GetAxisRaw("Vertical");
-                                targetSpeed *= targetSpeed > 0 ? maxForwardSpeed : maxBackwardSpeed;
-                                if (targetSpeed > speed)
-                                {
-                                    speed = Mathf.Min(targetSpeed, speed + acceleration * Time.deltaTime);
-                                }
-                                else if (targetSpeed < speed)
-                                {
-                                    speed = Mathf.Max(targetSpeed, speed - acceleration * Time.deltaTime);
-                                }
-
-                                // Calculate rotation speed.
-                                var targetRotateSpeed = Input.GetAxisRaw("Horizontal");
-                                targetRotateSpeed *= maxRotateSpeed;
-                                if (targetRotateSpeed > rotateSpeed)
-                                {
-                                    rotateSpeed = Mathf.Min(targetRotateSpeed, rotateSpeed + rotateAcceleration * Time.deltaTime);
-                                }
-                                else if (targetRotateSpeed < rotateSpeed)
-                                {
-                                    rotateSpeed = Mathf.Max(targetRotateSpeed, rotateSpeed - rotateAcceleration * Time.deltaTime);
-                                }
-
-                                // Calculate move delta.
-                                moveDelta = new Vector3(0, moveDelta.y, speed);
-                                moveDelta = transform.TransformDirection(moveDelta);
-                                break;
-                            }
-                        case InputType.Direct:
-                            {
-                                // Calculate direct speed and speed.
-                                var right = Vector3.right;
-                                var forward = Vector3.forward;
-                                if (Camera.main)
-                                {
-                                    right = Camera.main.transform.right;
-                                    right.y = 0.0f;
-                                    right.Normalize();
-                                    forward = Camera.main.transform.forward;
-                                    forward.y = 0.0f;
-                                    forward.Normalize();
-                                }
-
-                                var targetSpeed = right * Input.GetAxisRaw("Horizontal");
-                                targetSpeed += forward * Input.GetAxisRaw("Vertical");
-                                if (targetSpeed.sqrMagnitude > 0.0f)
-                                {
-                                    targetSpeed.Normalize();
-                                }
-                                targetSpeed *= maxForwardSpeed;
-
-                                var speedDiff = targetSpeed - directSpeed;
-                                if (speedDiff.sqrMagnitude < acceleration * acceleration * Time.deltaTime * Time.deltaTime)
-                                {
-                                    directSpeed = targetSpeed;
-                                }
-                                else if (speedDiff.sqrMagnitude > 0.0f)
-                                {
-                                    speedDiff.Normalize();
-
-                                    directSpeed += speedDiff * acceleration * Time.deltaTime;
-                                }
-                                speed = directSpeed.magnitude;
-
-                                // Calculate rotation speed - ignore rotate acceleration.
-                                rotateSpeed = 0.0f;
-                                if (targetSpeed.sqrMagnitude > 0.0f)
-                                {
-                                    var localTargetSpeed = transform.InverseTransformDirection(targetSpeed);
-                                    var angleDiff = Vector3.SignedAngle(Vector3.forward, localTargetSpeed.normalized, Vector3.up);
-
-                                    if (angleDiff > 0.0f)
-                                    {
-                                        rotateSpeed = maxRotateSpeed;
-                                    }
-                                    else if (angleDiff < 0.0f)
-                                    {
-                                        rotateSpeed = -maxRotateSpeed;
-                                    }
-
-                                    // Assumes that x > NaN is false - otherwise we need to guard against Time.deltaTime being zero.
-                                    if (Mathf.Abs(rotateSpeed) > Mathf.Abs(angleDiff) / Time.deltaTime)
-                                    {
-                                        rotateSpeed = angleDiff / Time.deltaTime;
-                                    }
-                                }
-
-                                // Calculate move delta.
-                                moveDelta = new Vector3(directSpeed.x, moveDelta.y, directSpeed.z);
-                                break;
-                            }
-                    }
+                    speed = alwaysRunSpeed;
+                    rotateSpeed = 0.0f;
+                    moveDelta = new Vector3(0, moveDelta.y, 0);
 
                     // Check if player is grounded.
                     if (!airborne)
@@ -219,12 +139,11 @@ namespace Unity.LEGO.Minifig
                     }
 
                     // Cancel special.
-                    cancelSpecial = !Mathf.Approximately(Input.GetAxis("Vertical"), 0) || !Mathf.Approximately(Input.GetAxis("Horizontal"), 0) || Input.GetButtonDown("Jump");
-
+                    cancelSpecial = Input.GetButtonDown("Jump");
                 }
                 else
                 {
-                    HandleAutomaticAnimation();
+                    // Handle automatic animation (if needed).
                 }
             }
             else
@@ -238,6 +157,38 @@ namespace Unity.LEGO.Minifig
             }
 
             HandleMotion();
+        }
+        public void Jump()
+        {
+            if (!airborne || jumpsInAir > 0)
+            {
+                if (airborne)
+                {
+                    jumpsInAir--;
+
+                    if (doubleJumpAudioClip)
+                    {
+                        audioSource.PlayOneShot(doubleJumpAudioClip);
+                    }
+                }
+                else
+                {
+                    if (jumpAudioClip)
+                    {
+                        audioSource.PlayOneShot(jumpAudioClip);
+                    }
+                }
+
+                moveDelta.y = jumpSpeed;
+
+                foreach (var animator in animators)
+                {
+                    animator.SetTrigger(jumpHash);
+                }
+
+                airborne = true;
+                airborneTime = coyoteDelay;
+            }
         }
 
         protected override void UpdateMotionAnimations()
@@ -276,7 +227,7 @@ namespace Unity.LEGO.Minifig
 
                 // Move Minifigure to root hierarchy.
                 minifig.transform.parent = null;
-
+                
                 // Find and disable Minifigure animator.
                 foreach (var animator in animators)
                 {

@@ -1,0 +1,414 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.16f1 (7321c9670bc2) revision 7545289'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'en' Physical Memory: 16309 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.1.16f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/535439/The Night Before Christmas
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+64030
+Successfully changed project path to: C:/Users/535439/The Night Before Christmas
+C:/Users/535439/The Night Before Christmas
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 170.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.16f1 (7321c9670bc2)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/535439/The Night Before Christmas/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x2188)
+    Vendor:   NVIDIA
+    VRAM:     3949 MB
+    Driver:   31.0.15.3758
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56736
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.1.16f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.018559 seconds.
+Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for AppleTV target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 147.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.319 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1319ms)
+		BeginReloadAssembly (86ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (980ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (489ms)
+				TypeCache.Initialize (489ms)
+					TypeCache.ScanAssembly (486ms)
+				ResolveRequiredComponents (1ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (399ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (84ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (148ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.009424 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\535439\The Night Before Christmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\535439\The Night Before Christmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 134.31 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Completed reload, in  1.629 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1629ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1388ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (270ms)
+				TypeCache.Initialize (258ms)
+					TypeCache.ScanAssembly (254ms)
+				ResolveRequiredComponents (12ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (902ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (34ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (134ms)
+				BeforeProcessingInitializeOnLoad (136ms)
+				ProcessInitializeOnLoadAttributes (506ms)
+				ProcessInitializeOnLoadMethodAttributes (73ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 1.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5943 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 62 unused Assets / (420.0 KB). Loaded Objects now: 6380.
+Memory consumption went from 0.92 GB to 0.92 GB.
+Total: 4.044000 ms (FindLiveObjects: 0.501700 ms CreateObjectMapping: 0.146100 ms MarkObjects: 3.197600 ms  DeleteObjects: 0.197400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007989 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\535439\The Night Before Christmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\535439\The Night Before Christmas\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for AppleTV target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Completed reload, in  1.248 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1248ms)
+		BeginReloadAssembly (139ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (1010ms)
+			LoadAssemblies (99ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (252ms)
+				TypeCache.Initialize (240ms)
+					TypeCache.ScanAssembly (234ms)
+				ResolveRequiredComponents (13ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (543ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (42ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (287ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5805 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (380.6 KB). Loaded Objects now: 6396.
+Memory consumption went from 0.90 GB to 0.90 GB.
+Total: 5.219100 ms (FindLiveObjects: 0.534700 ms CreateObjectMapping: 0.154700 ms MarkObjects: 4.363900 ms  DeleteObjects: 0.164700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 842022.809633 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Models/Reindeer.fbx
+  artifactKey: Guid(0006ddb2b2214c54b8ba8fc566451109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Models/Reindeer.fbx using Guid(0006ddb2b2214c54b8ba8fc566451109) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfc141e75b7300102c66d60e7b203adb') in 0.629020 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Models/Rock Large.fbx
+  artifactKey: Guid(73491185a9697ca44a35f108dece3771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Models/Rock Large.fbx using Guid(73491185a9697ca44a35f108dece3771) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7d92a9b4a90391fd4b5b19fd0bd0c89') in 0.275971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Models/Rock Tall.fbx
+  artifactKey: Guid(0b612e50be3626c4fbb7541bb7e7cc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Models/Rock Tall.fbx using Guid(0b612e50be3626c4fbb7541bb7e7cc46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5fe076551e101ebfd3e3851b5cbe4b') in 0.027568 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Models/Rock Medium.fbx
+  artifactKey: Guid(fc3f47fea9ae29c4588e5ba81736d1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Models/Rock Medium.fbx using Guid(fc3f47fea9ae29c4588e5ba81736d1bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce2d32977348cc6d2b387ab10397fa5') in 0.023767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.643166 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Models/Processed Models/Snowy Tree Optimized.asset
+  artifactKey: Guid(3c7ac7e0ce74e13429ccac8caeffed54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Models/Processed Models/Snowy Tree Optimized.asset using Guid(3c7ac7e0ce74e13429ccac8caeffed54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be1b5f11f633806ac34744283ae55d5') in 0.028424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.892510 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Minifigs/Santa.prefab
+  artifactKey: Guid(11d069239cbc5884b8c13360ac186952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Minifigs/Santa.prefab using Guid(11d069239cbc5884b8c13360ac186952) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee0d9b1fbfff0e10c1fb31720334b031') in 1.757731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.091347 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Buildings/House Gingerbot.prefab
+  artifactKey: Guid(013efc5520e3be040b85139760041eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Buildings/House Gingerbot.prefab using Guid(013efc5520e3be040b85139760041eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967fe0cd9a69420c2df1e19cd5419cd2') in 0.292659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Buildings/House Gingerbrick.prefab
+  artifactKey: Guid(ec9cb9fa3958dc8439658abb40bb316a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Buildings/House Gingerbrick.prefab using Guid(ec9cb9fa3958dc8439658abb40bb316a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77b7966df76dcce05a52f07e2c3e2e6a') in 0.400325 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.488104 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/Objectives/Objective Go To Sleigh.prefab
+  artifactKey: Guid(eb7bf4ece4ca9884abd64b9c05bf8a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/Objectives/Objective Go To Sleigh.prefab using Guid(eb7bf4ece4ca9884abd64b9c05bf8a29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '214088a4c00c8e0147f68755ce18c489') in 0.082376 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.216992 seconds.
+  path: Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Characters/Frosty.prefab
+  artifactKey: Guid(52e6752a97f1b403b94ef7ceb455c61b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Characters/Frosty.prefab using Guid(52e6752a97f1b403b94ef7ceb455c61b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2fa2f2e7b56d7f75bdcf8d0370edc8') in 0.346816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Characters/Mister Gingerbrick.prefab
+  artifactKey: Guid(da37542ca19b04745a297abdecfe4f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Characters/Mister Gingerbrick.prefab using Guid(da37542ca19b04745a297abdecfe4f7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd117fd63c66991318ae388a0ecaf7ed0') in 0.484473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Characters/Santa.prefab
+  artifactKey: Guid(6c7e40dfe49594758ae3c4413edd1736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Characters/Santa.prefab using Guid(6c7e40dfe49594758ae3c4413edd1736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c572a83693e9011601075e6d209080d') in 1.174620 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.119383 seconds.
+  path: Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Candy Cane Small.prefab
+  artifactKey: Guid(a0399e4497549448492ac0141808cabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Candy Cane Small.prefab using Guid(a0399e4497549448492ac0141808cabc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81f1d5580807dcef9304be7d6b1dc1e8') in 0.049772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Present Large.prefab
+  artifactKey: Guid(f454bab2a2d4a4c2f84188e64a195a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Present Large.prefab using Guid(f454bab2a2d4a4c2f84188e64a195a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fece6b083e9fbb437f87b8468b2e7e01') in 0.335615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Present Small.prefab
+  artifactKey: Guid(79da148f5ced645bdb11def4a8163506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Present Small.prefab using Guid(79da148f5ced645bdb11def4a8163506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a25b835ad440eca76e64fb2c29b8d4') in 0.062696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Chimney Top.prefab
+  artifactKey: Guid(a9081ff8efb6645ec99a61f93fcb8212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Chimney Top.prefab using Guid(a9081ff8efb6645ec99a61f93fcb8212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26ca5236ce79ba99e67e2ff6c4df2547') in 0.216411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Chimney Extension.prefab
+  artifactKey: Guid(2509530af21594e639799472193cd383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Chimney Extension.prefab using Guid(2509530af21594e639799472193cd383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '606e0fea12b7c9089846d29a9ad339b5') in 0.089648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Present Medium.prefab
+  artifactKey: Guid(718a05b6ce2c2424f909f6eeb15073ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Models/Santa Essentials/Present Medium.prefab using Guid(718a05b6ce2c2424f909f6eeb15073ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b5465c617619b32ae3895f542dbfcbb') in 0.109645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.432968 seconds.
+  path: Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Projectiles/Snowball.prefab
+  artifactKey: Guid(8fbf2e186b24c4204a894f3dfb507be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Santas Brickshop/Prefabs/LEGO Projectiles/Snowball.prefab using Guid(8fbf2e186b24c4204a894f3dfb507be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69c283241de39ee867120ce330a614f') in 0.044742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.812251 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Characters/Gingerbot.prefab
+  artifactKey: Guid(f384104d97b83254c8d94c94e647f36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Characters/Gingerbot.prefab using Guid(f384104d97b83254c8d94c94e647f36c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c2de21f19051c42e4ede02d010c87ea') in 0.100477 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Characters/Mister Gingerbrick.prefab
+  artifactKey: Guid(d201c744d5ae327449eaaac632def731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Characters/Mister Gingerbrick.prefab using Guid(d201c744d5ae327449eaaac632def731) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd403fad76053289cc67663816f32b5e') in 0.312857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.233827 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Environment/Candy Cane Evil Large.prefab
+  artifactKey: Guid(3b88622be0d349c428bd7106009e6753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Environment/Candy Cane Evil Large.prefab using Guid(3b88622be0d349c428bd7106009e6753) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e1b41105377303697d226f060e56b6') in 0.105273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Environment/Candy Cane Huge.prefab
+  artifactKey: Guid(77f8f3bd4c7505a4790efd7747a41978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Environment/Candy Cane Huge.prefab using Guid(77f8f3bd4c7505a4790efd7747a41978) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0be89b8af181302880f6ab9b309c3de') in 0.097080 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Environment/Snowy Tree.prefab
+  artifactKey: Guid(57c18a1e4ffa2c44cb9fe2250e6057fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/AddOns/MgLEGO Gingerbricks Revenge/Prefabs/LEGO Models/Environment/Snowy Tree.prefab using Guid(57c18a1e4ffa2c44cb9fe2250e6057fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22e1bcbf8c9b6c97e7c36e267a0ed66') in 0.158687 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
