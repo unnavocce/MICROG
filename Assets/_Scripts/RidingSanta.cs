@@ -75,18 +75,6 @@ namespace Unity.LEGO.Minifig
             }
         }
 
-        public string sceneToLoad; // The name of the scene to load
-
-        private void OnTriggerEnter(Collider other)
-        {
-            // Check if the object that entered the trigger has a specific tag (optional)
-            if (other.CompareTag("Obstacle"))
-            {
-                // Load the specified scene
-                SceneManager.LoadScene(sceneToLoad);
-            }
-        }
-
         protected override void Update()
         {
             // Handle input.
